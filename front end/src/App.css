@@ -1,0 +1,117 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Tắt nền hover và giữ màu trắng */
+.no-hover-menu .p-menuitem-link {
+  background-color: white !important;
+  color: black !important;
+  box-shadow: none !important;
+  transition: none !important;
+}
+
+/* Vô hiệu hoàn toàn hiệu ứng khi hover */
+.no-hover-menu .p-menuitem-link:hover {
+  background-color: white !important;
+  color: black !important;
+  box-shadow: none !important;
+}
+
+/* Giữ màu trắng cho chữ và icon */
+.no-hover-menu .p-menuitem-text,
+.no-hover-menu .pi {
+  color: black !important;
+}
+
+/* Khi hover, vẫn giữ màu trắng cho chữ và icon */
+.no-hover-menu .p-menuitem-link:hover .p-menuitem-text,
+.no-hover-menu .p-menuitem-link:hover .pi {
+  color: black !important;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ant-layout-sider-trigger {
+  background-color: #007a4d !important; /* Màu nền */
+  color: white !important; /* Màu icon */
+  text-align: center;
+  height: 48px;
+  line-height: 48px;
+  font-size: 18px;
+}
+
+.custom-menu .ant-menu-item,
+.custom-menu .ant-menu-submenu-title {
+  color: white !important;
+}
+
+.custom-menu .ant-menu-item:hover,
+.custom-menu .ant-menu-submenu-title:hover {
+  color: #ccc !important;
+}
+
+
+/* Khi được chọn (active) */
+.custom-menu .ant-menu-item-selected {
+  background-color: white !important;
+  color: #00a45a !important; /* Màu xanh đặc trưng của Ant Design */
+}
+
+/* Đảm bảo không bị override bởi menu inline */
+.custom-menu .ant-menu-item-selected a {
+  color: #00a45a !important;
+}
+
+.custom-select .ant-select-selection-item {
+  background-color: #00a45a !important; /* màu xanh Ant Design */
+  color: #fff !important;               /* chữ trắng */
+  border: none !important;              /* bỏ viền nếu muốn */
+}
+
+/* Dấu X (nút xóa) màu trắng */
+.custom-select .ant-select-selection-item-remove {
+  color: #fff !important;
+}
+
+/* Khi hover vào dấu X, giữ màu trắng */
+.custom-select .ant-select-selection-item-remove:hover {
+  color: #fff !important;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}

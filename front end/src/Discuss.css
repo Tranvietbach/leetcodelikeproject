@@ -1,0 +1,4 @@
+    .p-splitter-panel {
+        display: block !important;
+        flex-direction: column;
+    }

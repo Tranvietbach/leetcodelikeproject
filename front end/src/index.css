@@ -1,0 +1,27 @@
+.custom-menubar .p-menuitem-link {
+  color: black !important;
+}
+
+.font1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+.font2{
+    font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 150;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+.font3 {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
